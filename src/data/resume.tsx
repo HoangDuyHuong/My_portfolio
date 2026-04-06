@@ -1,15 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { ReactLight } from "@/components/ui/svgs/reactLight";
-import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
-import { Typescript } from "@/components/ui/svgs/typescript";
-import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
@@ -23,51 +14,61 @@ export const DATA = {
   summary:
     "A friendly, sociable, and adaptive student with a passion for learning new technologies. I enjoy exploring and experimenting with digital design, hardware verification, and embedded systems. Although sometimes careless, I am improving by paying attention to details and practicing discipline in every project.",
   avatarUrl: "/avatar.jpg",
-  skills: [
-    { name: "React", icon: ReactLight },
-    { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
-    { name: "Node.js", icon: Nodejs },
+  programmingLanguages: [
+    { name: "C/C++", icon: Csharp },
     { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "Verilog/SystemVerilog", iconPath: "/verilog_img" },
+    { name: "UVM", iconPath: "/uvm.png" },
+    { name: "Tcl", iconPath: "/tcl_img.png" },
+    { name: "HTML", iconPath: "/html.svg" },
+    { name: "CSS", iconPath: "/css.svg" },
+    { name: "Dart", iconPath: "/dart.svg" },
+  ],
+  tools: [
+    { name: "Vivado", iconPath: "/viado_img.png" },
+    { name: "Multisim", iconPath: "/multisim.webp" },
+    { name: "Proteus", iconPath: "/proteus.png" },
+    { name: "VS Code", iconPath: "/vscode.svg" },
+    { name: "Arduino IDE", iconPath: "/adruino_ide" },
+    { name: "PlatformIO", iconPath: "/flatform_io" },
+    { name: "Xilinx ISE", iconPath: "/xilin" },
+    { name: "EDA Playground", iconPath: "/eda_playground" },
+    { name: "QuestaSim", iconPath: "/questasim" },
+    { name: "Cadence Innovus", iconPath: "/cadence_img.png" },
+    { name: "Github", icon: Icons.github },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "dellcook69@gmail.com",
+    tel: "0338539594",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/HoangDuyHuong",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/duy-h%C6%B0%E1%BB%9Bng-ho%C3%A0ng-178174368/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
+      Facebook: {
+        name: "Facebook",
+        url: "https://www.facebook.com/hoang.huong.412164",
+        icon: Icons.facebook,
 
         navbar: true,
       },
       Youtube: {
         name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        url: "https://www.youtube.com/@duyhuonghoang5586",
         icon: Icons.youtube,
         navbar: true,
       },
