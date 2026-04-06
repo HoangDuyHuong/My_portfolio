@@ -121,9 +121,9 @@ export default function Page() {
             {DATA.programmingLanguages.map((skill, id) => (
               <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
-                  {skill.icon ? (
+                  {'icon' in skill && skill.icon ? (
                     <skill.icon className="size-4 rounded overflow-hidden object-contain" />
-                  ) : skill.iconPath ? (
+                  ) : 'iconPath' in skill && skill.iconPath ? (
                     <img src={skill.iconPath} alt={skill.name} className="size-4 rounded overflow-hidden object-contain" />
                   ) : null}
                   <span className="text-foreground text-sm font-medium">{skill.name}</span>
@@ -140,9 +140,9 @@ export default function Page() {
             {DATA.tools.map((skill, id) => (
               <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
                 <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
-                  {skill.icon ? (
+                  {'icon' in skill && skill.icon ? (
                     <skill.icon className="size-4 rounded overflow-hidden object-contain" />
-                  ) : skill.iconPath ? (
+                  ) : 'iconPath' in skill && skill.iconPath ? (
                     <img src={skill.iconPath} alt={skill.name} className="size-4 rounded overflow-hidden object-contain" />
                   ) : null}
                   <span className="text-foreground text-sm font-medium">{skill.name}</span>
