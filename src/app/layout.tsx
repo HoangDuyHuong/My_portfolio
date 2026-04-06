@@ -63,6 +63,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Suppress hydration warnings caused by browser extensions
+              const originalConsoleError = console.error;
+              console.error = (...args) => {
+                if (
+                  typeof args[0] === 'string' &&
+                  args[0].includes('Hydration') &&
+                  args[0].includes('bis_skin_checked')
+                ) {
+                  return;
+                }
+                originalConsoleError(...args);
+              };
+            `,
+          }}
+        />
+      </head>
       <body
         suppressHydrationWarning
         className={cn(
